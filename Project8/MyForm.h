@@ -6,7 +6,7 @@
 #include <iostream>
 #include <vector>
 
-// Функция для подсчета количества записей в файле
+// Р¤СѓРЅРєС†РёСЏ РґР»СЏ РїРѕРґСЃС‡РµС‚Р° РєРѕР»РёС‡РµСЃС‚РІР° Р·Р°РїРёСЃРµР№ РІ С„Р°Р№Р»Рµ
 int countRecords()
 {
 	std::ifstream inputFile("data.txt");
@@ -24,8 +24,8 @@ int countRecords()
 	}
 	else
 	{
-		std::cout << "Ошибка при открытии файла!" << std::endl;
-		return -1; // Возвращаем -1 в случае ошибки чтения файла
+		std::cout << "РћС€РёР±РєР° РїСЂРё РѕС‚РєСЂС‹С‚РёРё С„Р°Р№Р»Р°!" << std::endl;
+		return -1; // Р’РѕР·РІСЂР°С‰Р°РµРј -1 РІ СЃР»СѓС‡Р°Рµ РѕС€РёР±РєРё С‡С‚РµРЅРёСЏ С„Р°Р№Р»Р°
 	}
 }
 namespace Project8 {
@@ -38,7 +38,7 @@ namespace Project8 {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Сводка для MyForm
+	/// РЎРІРѕРґРєР° РґР»СЏ MyForm
 	/// </summary>
 	public ref class MyForm : public System::Windows::Forms::Form
 	{
@@ -47,13 +47,13 @@ namespace Project8 {
 		{
 			InitializeComponent();
 			//
-			//TODO: добавьте код конструктора
+			//TODO: РґРѕР±Р°РІСЊС‚Рµ РєРѕРґ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°
 			//
 		}
 
 	protected:
 		/// <summary>
-		/// Освободить все используемые ресурсы.
+		/// РћСЃРІРѕР±РѕРґРёС‚СЊ РІСЃРµ РёСЃРїРѕР»СЊР·СѓРµРјС‹Рµ СЂРµСЃСѓСЂСЃС‹.
 		/// </summary>
 		~MyForm()
 		{
@@ -75,14 +75,14 @@ namespace Project8 {
 
 	private:
 		/// <summary>
-		/// Обязательная переменная конструктора.
+		/// РћР±СЏР·Р°С‚РµР»СЊРЅР°СЏ РїРµСЂРµРјРµРЅРЅР°СЏ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°.
 		/// </summary>
 		System::ComponentModel::Container^ components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// Требуемый метод для поддержки конструктора — не изменяйте 
-		/// содержимое этого метода с помощью редактора кода.
+		/// РўСЂРµР±СѓРµРјС‹Р№ РјРµС‚РѕРґ РґР»СЏ РїРѕРґРґРµСЂР¶РєРё РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР° вЂ” РЅРµ РёР·РјРµРЅСЏР№С‚Рµ 
+		/// СЃРѕРґРµСЂР¶РёРјРѕРµ СЌС‚РѕРіРѕ РјРµС‚РѕРґР° СЃ РїРѕРјРѕС‰СЊСЋ СЂРµРґР°РєС‚РѕСЂР° РєРѕРґР°.
 		/// </summary>
 		void InitializeComponent(void)
 		{
@@ -109,7 +109,7 @@ namespace Project8 {
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(394, 64);
 			this->button1->TabIndex = 0;
-			this->button1->Text = L"Записаться";
+			this->button1->Text = L"Р—Р°РїРёСЃР°С‚СЊСЃСЏ";
 			this->button1->UseVisualStyleBackColor = false;
 			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
 			// 
@@ -133,7 +133,7 @@ namespace Project8 {
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(97, 20);
 			this->label1->TabIndex = 2;
-			this->label1->Text = L"Ваше ФИО:";
+			this->label1->Text = L"Р’Р°С€Рµ Р¤РРћ:";
 			// 
 			// label2
 			// 
@@ -145,7 +145,7 @@ namespace Project8 {
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(136, 20);
 			this->label2->TabIndex = 4;
-			this->label2->Text = L"Преподаватель:";
+			this->label2->Text = L"РџСЂРµРїРѕРґР°РІР°С‚РµР»СЊ:";
 			this->label2->Click += gcnew System::EventHandler(this, &MyForm::label2_Click);
 			// 
 			// textBox2
@@ -169,7 +169,7 @@ namespace Project8 {
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(52, 20);
 			this->label3->TabIndex = 5;
-			this->label3->Text = L"Дата:";
+			this->label3->Text = L"Р”Р°С‚Р°:";
 			this->label3->Click += gcnew System::EventHandler(this, &MyForm::label3_Click);
 			// 
 			// dateTimePicker1
@@ -195,7 +195,7 @@ namespace Project8 {
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(343, 42);
 			this->label4->TabIndex = 7;
-			this->label4->Text = L"Запись на занятия";
+			this->label4->Text = L"Р—Р°РїРёСЃСЊ РЅР° Р·Р°РЅСЏС‚РёСЏ";
 			// 
 			// pictureBox1
 			// 
@@ -239,44 +239,44 @@ namespace Project8 {
 #pragma endregion
 
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-	// Проверяем, что все поля заполнены
+	// РџСЂРѕРІРµСЂСЏРµРј, С‡С‚Рѕ РІСЃРµ РїРѕР»СЏ Р·Р°РїРѕР»РЅРµРЅС‹
 	if (textBox1->Text == "" || textBox2->Text == "" || dateTimePicker1->Text == "") {
-		MessageBox::Show("Пожалуйста, заполните все поля!");
-		return; // Прерываем выполнение метода, чтобы данные не сохранялись
+		MessageBox::Show("РџРѕР¶Р°Р»СѓР№СЃС‚Р°, Р·Р°РїРѕР»РЅРёС‚Рµ РІСЃРµ РїРѕР»СЏ!");
+		return; // РџСЂРµСЂС‹РІР°РµРј РІС‹РїРѕР»РЅРµРЅРёРµ РјРµС‚РѕРґР°, С‡С‚РѕР±С‹ РґР°РЅРЅС‹Рµ РЅРµ СЃРѕС…СЂР°РЅСЏР»РёСЃСЊ
 	}
 
-	// Получаем количество существующих записей
+	// РџРѕР»СѓС‡Р°РµРј РєРѕР»РёС‡РµСЃС‚РІРѕ СЃСѓС‰РµСЃС‚РІСѓСЋС‰РёС… Р·Р°РїРёСЃРµР№
 	int recordCount = countRecords();
 
 	if (recordCount == -1) {
-		MessageBox::Show("Ошибка при подсчете записей!");
-		return; // Прерываем выполнение метода, чтобы данные не сохранялись
+		MessageBox::Show("РћС€РёР±РєР° РїСЂРё РїРѕРґСЃС‡РµС‚Рµ Р·Р°РїРёСЃРµР№!");
+		return; // РџСЂРµСЂС‹РІР°РµРј РІС‹РїРѕР»РЅРµРЅРёРµ РјРµС‚РѕРґР°, С‡С‚РѕР±С‹ РґР°РЅРЅС‹Рµ РЅРµ СЃРѕС…СЂР°РЅСЏР»РёСЃСЊ
 	}
 
-	// Проверяем, достигнуто ли ограничение в 14 записей
+	// РџСЂРѕРІРµСЂСЏРµРј, РґРѕСЃС‚РёРіРЅСѓС‚Рѕ Р»Рё РѕРіСЂР°РЅРёС‡РµРЅРёРµ РІ 14 Р·Р°РїРёСЃРµР№
 	if (recordCount >= 14) {
-		MessageBox::Show("Достигнуто максимальное количество записей!");
-		return; // Прерываем выполнение метода, чтобы данные не сохранялись
+		MessageBox::Show("Р”РѕСЃС‚РёРіРЅСѓС‚Рѕ РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ Р·Р°РїРёСЃРµР№!");
+		return; // РџСЂРµСЂС‹РІР°РµРј РІС‹РїРѕР»РЅРµРЅРёРµ РјРµС‚РѕРґР°, С‡С‚РѕР±С‹ РґР°РЅРЅС‹Рµ РЅРµ СЃРѕС…СЂР°РЅСЏР»РёСЃСЊ
 	}
 
 	std::string fio = msclr::interop::marshal_as<std::string>(textBox1->Text);
 	std::string teacher = msclr::interop::marshal_as<std::string>(textBox2->Text);
 	std::string date = msclr::interop::marshal_as<std::string>(dateTimePicker1->Text);
 
-	// Открываем файл для записи
+	// РћС‚РєСЂС‹РІР°РµРј С„Р°Р№Р» РґР»СЏ Р·Р°РїРёСЃРё
 	std::ofstream outputFile("data.txt", std::ios::app);
 	if (outputFile.is_open()) {
-		// Записываем данные в файл
-		outputFile << "ФИО: " << fio << std::endl;
-		outputFile << "Преподаватель: " << teacher << std::endl;
-		outputFile << "Дата: " << date << std::endl;
+		// Р—Р°РїРёСЃС‹РІР°РµРј РґР°РЅРЅС‹Рµ РІ С„Р°Р№Р»
+		outputFile << "Р¤РРћ: " << fio << std::endl;
+		outputFile << "РџСЂРµРїРѕРґР°РІР°С‚РµР»СЊ: " << teacher << std::endl;
+		outputFile << "Р”Р°С‚Р°: " << date << std::endl;
 		outputFile << "--------------------------" << std::endl;
 		outputFile.close();
 
-		MessageBox::Show("Запись успешно сохранена!");
+		MessageBox::Show("Р—Р°РїРёСЃСЊ СѓСЃРїРµС€РЅРѕ СЃРѕС…СЂР°РЅРµРЅР°!");
 	}
 	else {
-		MessageBox::Show("Ошибка при открытии файла!");
+		MessageBox::Show("РћС€РёР±РєР° РїСЂРё РѕС‚РєСЂС‹С‚РёРё С„Р°Р№Р»Р°!");
 	}
 }
 
